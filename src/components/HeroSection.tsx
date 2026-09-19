@@ -56,6 +56,11 @@ export default function HeroSection({ onCtaClick }: HeroSectionProps) {
               <img
                 src="/assets/hero-product.png"
                 alt="Mundo dos Moldes - +1000 Moldes Prontos para Imprimir e Montar"
+                width={896}
+                height={504}
+                loading="eager"
+                decoding="sync"
+                fetchPriority="high"
                 className="w-full h-auto object-cover rounded-2xl sm:rounded-3xl group-hover:scale-[1.01] transition-transform duration-300"
                 onError={(e) => {
                   const target = e.currentTarget;

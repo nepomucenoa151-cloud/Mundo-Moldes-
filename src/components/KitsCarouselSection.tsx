@@ -224,6 +224,8 @@ export default function KitsCarouselSection({ onCtaClick }: KitsCarouselSectionP
                     <img
                       src={kit.image}
                       alt={kit.title}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-transform duration-300"
                       onError={(e) => {
                         const target = e.currentTarget;

@@ -111,6 +111,8 @@ export default function SocialProofGallery() {
                       <img
                         src={item.imageUrl}
                         alt={item.title}
+                        loading="lazy"
+                        decoding="async"
                         className="h-28 sm:h-32 w-auto max-w-[210px] object-contain rounded-xl shadow-md border-2 border-white/90 bg-white/80 p-1"
                         onError={(e) => {
                           const target = e.currentTarget;
