@@ -11,7 +11,7 @@ export default function PricingOfferSection({ onBuyClick }: PricingOfferSectionP
     name: 'Pacote Básico',
     originalPrice: '47,00',
     price: '10,00',
-    description: '+300 Moldes Essenciais das Caixinhas Mais Pedidas + Acesso Google Drive',
+    description: '+300 Moldes Essenciais das Caixinhas Mais Pedidas + Acesso por 7 dias! (USO POR TEMPO LIMITADO)',
   };
 
   const vipPlan: PlanDetails = {
@@ -24,7 +24,7 @@ export default function PricingOfferSection({ onBuyClick }: PricingOfferSectionP
 
   const basicFeatures = [
     { text: '+300 Moldes Essenciais das Caixinhas Mais Pedidas', included: true },
-    { text: 'Acesso imediato no Google Drive para download', included: true },
+    { text: 'Acesso por 7 dias! (USO POR TEMPO LIMITADO)', included: true },
     { text: 'Arquivos em Silhouette Studio (.STUDIO) editáveis', included: false },
     { text: 'Área com os 6 Super Bônus Exclusivos', included: false },
     { text: 'Suporte prioritário via WhatsApp', included: false },
@@ -130,14 +130,16 @@ export default function PricingOfferSection({ onBuyClick }: PricingOfferSectionP
 
               {/* Action Button */}
               <div className="pt-4 mt-auto">
-                <button
-                  onClick={() => onBuyClick(basicPlan)}
+                <a
+                  href="https://pay.wiapy.com/R5oH5S0a5MjL"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   id="buy-basic-package-button"
-                  className="w-full bg-gray-900 hover:bg-gray-800 active:scale-[0.98] text-white font-extrabold text-sm sm:text-base py-3.5 px-5 rounded-2xl shadow-md transition-all cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full bg-gray-900 hover:bg-gray-800 active:scale-[0.98] text-white font-extrabold text-sm sm:text-base py-3.5 px-5 rounded-2xl shadow-md transition-all cursor-pointer flex items-center justify-center gap-2 text-center"
                 >
                   <Lock className="w-4 h-4" />
                   <span>QUERO PACOTE BÁSICO</span>
-                </button>
+                </a>
                 <div className="text-[11px] text-gray-400 text-center mt-2 flex items-center justify-center gap-1">
                   <Shield className="w-3 h-3 text-emerald-600" />
                   Garantia incondicional de 7 dias
@@ -208,14 +210,16 @@ export default function PricingOfferSection({ onBuyClick }: PricingOfferSectionP
 
               {/* Action Button */}
               <div className="pt-4 mt-auto">
-                <button
-                  onClick={() => onBuyClick(vipPlan)}
+                <a
+                  href="https://pay.wiapy.com/xbNZvDT5PSQX"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   id="buy-vip-package-button"
-                  className="w-full bg-[#28A745] hover:bg-[#218838] active:scale-[0.98] text-white font-black text-sm sm:text-lg py-4 px-6 rounded-2xl shadow-xl shadow-green-600/25 transition-all duration-200 animate-cta-pulse uppercase tracking-wider cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full bg-[#28A745] hover:bg-[#218838] active:scale-[0.98] text-white font-black text-sm sm:text-lg py-4 px-6 rounded-2xl shadow-xl shadow-green-600/25 transition-all duration-200 animate-cta-pulse uppercase tracking-wider cursor-pointer flex items-center justify-center gap-2 text-center"
                 >
                   <Lock className="w-5 h-5" />
                   <span>QUERO PACOTE COMPLETO</span>
-                </button>
+                </a>
                 <div className="text-[11px] text-gray-500 text-center mt-2.5 flex items-center justify-center gap-1.5">
                   <QrCode className="w-3.5 h-3.5 text-emerald-600" />
                   <span>PIX ou Cartão • Acesso imediato no e-mail</span>

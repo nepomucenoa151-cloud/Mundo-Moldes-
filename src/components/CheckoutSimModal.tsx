@@ -31,6 +31,11 @@ export default function CheckoutSimModal({ isOpen, onClose, plan }: CheckoutSimM
   };
 
   const handleSimulatePayment = () => {
+    if (currentPlan.id === 'vip') {
+      window.open('https://pay.wiapy.com/xbNZvDT5PSQX', '_blank');
+    } else if (currentPlan.id === 'basic') {
+      window.open('https://pay.wiapy.com/R5oH5S0a5MjL', '_blank');
+    }
     setIsSuccess(true);
   };
 
