@@ -1,0 +1,6 @@
+{
+  "name": "Mundo dos Moldes",
+  "description": "Landing page de vendas de alta conversão para o infoproduto Mundo dos Moldes: +1000 Moldes Prontos para Imprimir e Montar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
